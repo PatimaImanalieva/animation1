@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>emoji!</title>
+    <style media="screen">
+
+      body {
+        background: black;
+      }
+
+
+      /* эмодзи свойства */
+
+      .emoji-e {
+        width: 160px;
+        height: 160px;
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: url('images/1emoji.png');
+        background-position: -837px 0;
+      }
+
+      .emoji-e2 {
+        width: 160px;
+        height: 160px;
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: url('images/2emoji.png');
+        background-position: -837px 0;
+      }
+
+      .emoji1 {
+        height: 160px;
+        position: relative;
+        margin-top: 30%;
+        background: url('images/1emoji.png');
+      }
+
+      .emoji2 {
+        display: inline-block;
+        position: relative;
+      }
+
+      .leftemoji {
+        position: absolute;
+        left: 50%;
+        top: 40%;
+      }
+
+      .leftemoji2 {
+        position: absolute;
+        left: 30%;
+        top: 40%;
+      }
+
+      .leftemoji3 {
+        position: absolute;
+        left: 70%;
+        top: 40%;
+      }
+
+
+
+      /* подключение анимации */
+
+      .eyes {
+        animation: eyes .7s steps(1) infinite;
+      }
+
+      .face {
+        animation: face 4s steps(1) infinite;
+      }
+
+      .rotate {
+        animation: rotate 4s ease alternate infinite;
+      }
+      .rotate:hover {
+        animation-play-state: paused;
+      }
+
+      .rotate2 {
+        animation: rotate2 4s ease alternate infinite;
+      }
+      .rotate2:hover {
+        animation-play-state: paused;
+      }
+
+      .rotate3 {
+        animation: rotate3 4s ease alternate infinite;
+      }
+
+      .rotate4 {
+        animation: rotate4 2s ease alternate infinite;
+      }
+
+      .rotate5 {
+        animation: rotate5 2s ease alternate infinite;
+      }
+
+
+
+      /* эмодзи анимация */
+
+      @keyframes eyes {
+        0% {background-position: -640px top;}
+        20% {background-position: -800px top;}
+        40% {background-position: -960px top;}
+        60% {background-position: -800px top;}
+        80% {background-position: -960px top;}
+        100% {background-position: -800px top;}
+      }
+
+      @keyframes face {
+        0% {background-position: -640px top;}
+        20% {background-position: -800px top;}
+        40% {background-position: -960px top;}
+        60% {background-position: -800px top;}
+        80% {background-position: -960px top;}
+        100% {background-position: -800px top;}
+      }
+
+      @keyframes rotate {
+        0% {background-position: -640px top; transform: rotate(0deg);}
+        20% {background-position: -800px top;}
+        40% {background-position: -960px top;}
+        60% {background-position: -800px top;}
+        80% {background-position: -960px top;}
+        100% {background-position: -800px top; transform: rotate(360deg);}
+      }
+
+      @keyframes rotate2 {
+        0% {background-position: -640px top;}
+        20% {background-position: -800px top;}
+        40% {background-position: -960px top;}
+        60% {background-position: -800px top;}
+        80% {background-position: -960px top;}
+        100% {background-position: -800px top;}
+      }
+
+      @keyframes rotate3 {
+        0% {background-position: -640px top; transform: scale(1);}
+        20% {background-position: -800px top;}
+        40% {background-position: -960px top;}
+        60% {background-position: -800px top;}
+        80% {background-position: -960px top;}
+        100% {background-position: -800px top; transform: scale(3);}
+      }
+
+      @keyframes rotate4 {
+        0% {background-position: -640px top; transform: rotateY(0deg);}
+        20% {background-position: -800px top;}
+        40% {background-position: -960px top;}
+        60% {background-position: -800px top;}
+        80% {background-position: -960px top;}
+        100% {background-position: -800px top; transform: rotateY(360deg);}
+      }
+
+      @keyframes rotate5 {
+        0% {background-position: -640px top; transform: rotateX(0deg);}
+        20% {background-position: -800px top;}
+        40% {background-position: -960px top;}
+        60% {background-position: -800px top;}
+        80% {background-position: -960px top;}
+        100% {background-position: -800px top; transform: rotateX(360deg);}
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <div class="div1">
+      <!-- эмодзи с движением 0-360 градусов большого охвата -->
+
+      <div class="emoji2 rotate">
+        <div class="emoji-e2 face"></div>
+      </div>
+
+      <div class="emoji3 rotate">
+        <div class="emoji-e2 face"></div>
+      </div>
+
+
+
+      <!-- 4 эмодзи с движением 0-360 градусов небольшого охвата, по центру -->
+
+      <div class="leftemoji">
+        <div class="rotate">
+          <div class="emoji-e2 face"></div>
+        </div>
+
+        <div class="">
+          <div class="emoji-e2 face"></div>
+        </div>
+      </div>
+
+      <div class="leftemoji2">
+        <div class="rotate5">
+          <div class="emoji-e2 face"></div>
+        </div>
+
+        <div class="">
+          <div class="emoji-e2 face"></div>
+        </div>
+      </div>
+
+      <div class="leftemoji3">
+        <div class="rotate4">
+          <div class="emoji-e2 face"></div>
+        </div>
+
+        <div class="">
+          <div class="emoji-e2 face"></div>
+        </div>
+      </div>
+
+
+      <!-- эмодзи с движением волны -->
+
+      <div class="emoji1 rotate2">
+        <div class="emoji-e eyes"></div>
+      </div>
+
+    </div>
+
+  </body>
+</html>
